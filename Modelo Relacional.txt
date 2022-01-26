@@ -1,0 +1,35 @@
+UD12
+
+Act 7
+
+Trabajadores(codigo trabajador, dni, nº seguridad social, nombre, apellidos, direccion, telefono, codigo trabajador FK)
+Departamentos(codigo, nombre, codigo trabajador FK)
+Trabajan(codigo trabajador, codigo)
+Contratos(id contrato, fecha inicio, fecha final)
+Categoria profesional(id categoria, id contrato FK, codigo trabajador FK, id nomina FK)
+Nóminas(id nomina, fecha, salario)
+
+Act 12
+Empresa(CIF, Nombre, Dirección, Teléfono, Código interno)
+Proyecto(IdProyecto, FechaInicio, FechaFin, FechaPrevista)
+Trabajador(Código Trabajador, DNI, Nombre, Apellidos)
+Profesión(Código Profesión)
+Hacer(CIF, IdProyecto)
+Trabaja(Código Trabajador, IdProyecto)
+Tiene(Código Trabajador, Código Profesión)
+
+Act 13
+
+Empleado(DNI, Nombre, Apellidos, NumeroSS, Tel Fijo, Movil)
+Cocinero(DNI, Años de servicio)
+Pinche(DNI, Fecha de nacimiento, DNI)
+Entrante(IDPlato, nombre, precio)
+Primer Plato(IDPlato, nombre, precio)
+Segundo Plato(IDPlato, nombre, precio)
+Postre(IDPlato, nombre, precio)
+Ingredientes(IDIngrediente, Cantidad)
+Almacén(número, nombre, descripcion, CodigoLetras)
+Estante(CodigoLetras, Tamaño)
+Se Almacena(número, CodigoLetras, IDIngrediente)
+Tiene(IDPlato, IDIngrediente)
+Puede Preparar(DNI, IDPlato)
